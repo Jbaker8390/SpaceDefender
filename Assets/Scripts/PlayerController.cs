@@ -16,7 +16,10 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.position += new Vector3(-speed *Time.deltaTime, 0, 0);
+            //transform.position += new Vector3(-speed *Time.deltaTime, 0, 0);
+            //alternative implementation
+            transform.position += Vector3.left * speed * Time.deltaTime;
+
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
